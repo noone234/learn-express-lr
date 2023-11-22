@@ -1,0 +1,12 @@
+{
+  "name": "learn-express-do",
+  "version": "1.0.0",
+  "description": "Learn Express.js from DigitalOcean, with a Postgres twist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Christopher Wolfe <noone234@gmail.com>",
+  "license": "ISC"
+}
