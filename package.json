@@ -1,7 +1,7 @@
 {
   "name": "learn-express-do",
   "version": "1.0.0",
-  "description": "Learn Express.js from DigitalOcean, with a Postgres twist",
+  "description": "Learn Express.js from LogRocket",
   "main": "index.js",
   "type": "module",
   "scripts": {
