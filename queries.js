@@ -5,7 +5,7 @@ const pool = new Pool({
     host: 'localhost',
     database: 'db',
     password: 'password',
-    port: 5432,
+    port: 32768,
 })
 
 const getUsers = (request, response) => {
@@ -30,12 +30,14 @@ const getUserById = (request, response) => {
 
 const createUser = (request, response) => {
     const { name, email } = request.body
+    console.log(`Creating user with name = ${name}, email = ${email}`)
 
-    pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email], (error, results) => {
+    pool.query('INSERT INTO users (name, email) VALUES ($1, $2) RETURNING *', [name, email], (error, results) => {
         if (error) {
             throw error
         }
-        response.status(201).send(`User added with ID: ${results.insertId}`)
+        console.log(`Created user: ${JSON.stringify(results.rows[0])}}`)
+        response.status(201).send(`User added with ID: ${results.rows[0].id}`)
     })
 }
 
