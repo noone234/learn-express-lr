@@ -2,10 +2,10 @@
   "name": "learn-express-do",
   "version": "1.0.0",
   "description": "Learn Express.js from LogRocket",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "Christopher Wolfe <noone234@gmail.com>",
