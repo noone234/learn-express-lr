@@ -24,6 +24,21 @@ To start the API server:
 npm start
 ```
 
+At this point, the service will be listening for API requests at:
+```
+http://localhost:3000
+```
+
 # Testing
+
+## Automated tests
+
+```
+npm test
+```
+
+This will run a suite of Jest tests against API endpoints.
+
+## Manual tests
 
 Make API requests against http://localhost:3000, following LogRocket's blog at the top of this README file.
