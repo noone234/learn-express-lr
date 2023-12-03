@@ -37,7 +37,7 @@ const createUser = (request, response) => {
             throw error
         }
         console.log(`Created user: ${JSON.stringify(results.rows[0])}}`)
-        response.status(201).json({id: results.rows[0].id})
+        response.status(201).json({ id: results.rows[0].id })
     })
 }
 
@@ -52,7 +52,7 @@ const updateUser = (request, response) => {
             if (error) {
                 throw error
             }
-            response.status(200).json({id: id})
+            response.status(200).json({ id: id })
         }
     )
 }
