@@ -1,14 +1,15 @@
 # learn-express-lr
-Learn Express.js from LogRocket
+Learn how to develop a RESTful API with Express.js and PostgreSQL.
 
-https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/
+When this repo started, I was folllowing [a tutorial on LogRocket's blog](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/) from Tania Rascia.
 
-I have taken their example further and added:
+Since then I have taken that example further and added:
   - Docker container for Postgres
+  - Tests
 
 In the future I wish to add:
-  - Tests
   - OpenAPI spec
+  - sad path tests (e.g. invalid API request)
 
 # Usage
 
@@ -37,7 +38,7 @@ http://localhost:3000
 npm test
 ```
 
-This will run a suite of Jest tests against API endpoints.
+This will run a suite of tests against API endpoints. The tests leverage Jest and Supertest.
 
 ## Manual tests
 
